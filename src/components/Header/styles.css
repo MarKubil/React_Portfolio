@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    padding: 40px 0;
+}
+#img {
+    width: 9.5vh;
+    height: 9.5vh;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 50px;
+    cursor: ponter;
+    transition: 0.5s;
+}
+
+#img:hover {opacity: 0.5;}
+
+#description {
+    color: white;
+    text-align: center;
+}
+
+#description h1,h2 {
+    font-size: 5vh;
+}
+
+@media (max-width: 575px) {
+  #description h1,h2 {
+    font-size: 2.5vh;
+  }
+  #img {
+    margin-right: 10px;
+  }
+}

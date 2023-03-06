@@ -1,0 +1,18 @@
+.nav-item {
+    width: 25vh;
+    text-align: center;
+}
+
+.content {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    background-color: grey !important;
+}
+
+.nav-link {
+    color: white !important
+}
+.active {
+    color: black !important
+}
