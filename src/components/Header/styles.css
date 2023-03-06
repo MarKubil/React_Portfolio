@@ -1,3 +1,10 @@
+:root {
+  --mainColor: rgba(67, 0, 58, 0.8);
+  --lighterColor: rgba(116, 9, 102, 0.8);
+  --imgWidth: 90px;
+  --imgHeight: 90px;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -7,17 +14,43 @@ header {
     background-color: black;
     padding: 40px 0;
 }
+
 #img {
-    width: 9.5vh;
-    height: 9.5vh;
+    width: var(--imgWidth);
+    height: var(--imgHeight);
     border-radius: 50%;
-    border: 2px solid white;
     margin-right: 50px;
     cursor: ponter;
     transition: 0.5s;
+    text-align: center;
+ 
 }
 
-#img:hover {opacity: 0.5;}
+#inner {
+  background: var(--mainColor);
+  height: var(--imgHeight);
+  width: var(--imgWidth);
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50%;
+  border-width: 2px;
+  animation: rotateCircle 2s linear infinite reverse;
+
+}
+#outer {
+  background-image: linear-gradient(var(--mainColor), var(--lighterColor), white);
+  width: var(--imgWidth);
+  height: var(--imgHeight);
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50%;
+  border-width: 2px;
+  animation: rotateCircle 2s linear infinite;
+  padding: 0px;
+  display: table;
+}
+
+#img:hover {opacity: 0.8;}
 
 #description {
     color: white;
@@ -34,5 +67,27 @@ header {
   }
   #img {
     margin-right: 10px;
+  }
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }

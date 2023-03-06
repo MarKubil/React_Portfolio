@@ -1,18 +1,32 @@
-.nav-item {
-    width: 25vh;
-    text-align: center;
-}
-
 .content {
+    display: inline-block;
+    position: absolute;
+    right: 0;
     width: 80%;
+    height: 80vh;
     text-align: center;
-    margin: auto;
-    background-color: grey !important;
+    background-color: black !important;
+    color: white;
+    padding-top: 40px;
 }
 
-.nav-link {
+.nav-link, .active {
     color: white !important
 }
-.active {
-    color: black !important
+.nav-item:hover {
+    color: rgba(67, 0, 58, 0.8);
 }
+
+.nav-pills {
+    position: absolute;
+    width: 20%;
+    height: 80vh;
+    display: inline-block;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: rgba(67, 0, 58, 0.8);
+}
+
+

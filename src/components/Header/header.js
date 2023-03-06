@@ -14,8 +14,11 @@ function Header() {
 
     return (
         <header className="container-fluid">
-
-            <img onClick={handleShow} className="img-fluid" id="img" alt="profile" src={image} />
+            <div id="outer">
+                <div id="inner">
+                    <img onClick={handleShow} className="img-fluid box" id="img" alt="profile" src={image} />
+                </div>
+            </div>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Marius Kubilius</Modal.Title>

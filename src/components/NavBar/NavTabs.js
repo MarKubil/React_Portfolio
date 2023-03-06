@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './styles.css'
 function NavTabs() {
   return (
-    <ul className="nav nav-tabs bg-black justify-content-center">
+    <ul className="nav nav-pills navbar-dark nav-fill bg-black justify-content-center">
       <li className="nav-item">
         <NavLink
           to="/"
