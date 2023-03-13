@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Navigation */
+.nav-item a{
+    color: rgba(67, 0, 58, 0.8);
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent !important;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.nav-item a:hover {
+    color: white;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* Contact icons */
+
+a {
+    color: white;
+}
+
+.icon:hover {
+    color: white;
+    animation: iconGlow 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6;
+    }
+}
+
+@keyframes iconGlow {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+
+
+/* .content {
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    width: 70%;
+    height: 80vh;
+    text-align: center;
+    background-color: black !important;
+    color: white;
+    padding-top: 40px;
+}
+
+.nav-link, .active {
+    color: white !important
+}
+.nav-item:hover {
+    color: rgba(67, 0, 58, 0.8);
+}
+
+.nav-pills {
+    position: absolute;
+    width: 20%;
+    height: 80vh;
+    display: inline-block;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: rgba(67, 0, 58, 0.8);
+}
+
+ */

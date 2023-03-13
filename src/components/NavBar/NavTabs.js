@@ -1,18 +1,20 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './styles.css'
+
+
 function NavTabs() {
+
   return (
-    <ul className="nav nav-pills navbar-dark nav-fill bg-black justify-content-center">
-      <li className="nav-item">
+    <nav size="col-2">
+    <ul className="d-block nav nav-pills nav-fill bg-transparent justify-content-center" style={{fontFamily: "'Fredoka One', cursive", fontSize: "2.5rem"}}>
+      <li className="nav-item ptb-2">
         <NavLink
           to="/"
           end
-          className={({ isActive }) =>
+          className={( { isActive }) =>
             isActive ? 'nav-link active' : 'nav-link'
           }
         >
-          Home
+        &lt;About&gt;
         </NavLink>
       </li>
       <li className="nav-item">
@@ -22,7 +24,7 @@ function NavTabs() {
             isActive ? 'nav-link active' : 'nav-link'
           }
         >
-          About
+          &lt;Projects&gt;
         </NavLink>
       </li>
       <li className="nav-item">
@@ -32,7 +34,7 @@ function NavTabs() {
             isActive ? 'nav-link active' : 'nav-link'
           }
         >
-          Blog
+          &lt;Contacts&gt;
         </NavLink>
       </li>
       <li className="nav-item">
@@ -57,6 +59,7 @@ function NavTabs() {
         </NavLink>
       </li>
     </ul>
+    </nav>
   );
 }
 

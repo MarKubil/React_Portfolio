@@ -1,9 +1,9 @@
 import React from "react";
-import '../styles.css'
+
 
 function About() {
   return (
-    <div className="content">
+    <div size="col-10" className="content">
       <h1>About Page</h1>
       <p>
         Nunc pharetra fdinibus est at efficitur. Praesent sed congue diam. Integer gravida dui
